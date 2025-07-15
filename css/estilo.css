@@ -1,0 +1,101 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fef6e4, #e3f6f5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 2rem;
+  color: #3a506b;
+}
+
+/* Input + botón */
+#nuevatarea {
+  padding: 0.75rem;
+  width: 60%;
+  max-width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  margin-bottom: 1rem;
+}
+
+#nuevatarea:focus {
+  outline: none;
+  border-color: #5d9cec;
+}
+
+button {
+  padding: 0.75rem 1.2rem;
+  background-color: #5d9cec;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 0.5rem;
+}
+
+button:hover {
+  background-color: #4a89dc;
+}
+
+/* Lista de tareas */
+#listatareas {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+#listatareas li {
+  background-color: #f7f7f7;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+#listatareas li:hover {
+  background-color: #eee;
+}
+
+#listatareas li.completada {
+  text-decoration: line-through;
+  color: #999;
+  background-color: #e0e0e0;
+}
+
+/* Botón eliminar (si lo agregas en JS) */
+.eliminar-btn {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.eliminar-btn:hover {
+  color: #e63946;
+}
